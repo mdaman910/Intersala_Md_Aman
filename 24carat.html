@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <!--Now i write the code-->
+ <link rel='stylesheet' id='sbi_styles-css' href='https://24carrots.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2' media='all' />
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://24carrots.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' media='all' />
+    <style id='classic-theme-styles-inline-css'>
+        <!--color are simply copy from your website>
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+        
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        body .is-layout-grid>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='simply-gallery-block-frontend-css' href='https://24carrots.com/wp-content/plugins/simply-gallery-block/blocks/pgc_sgb.min.style.css?ver=3.1.9' media='all' />
+    <link rel='stylesheet' id='pgc-simply-gallery-plugin-lightbox-style-css' href='https://24carrots.com/wp-content/plugins/simply-gallery-block/plugins/pgc_sgb_lightbox.min.style.css?ver=3.1.9' media='all' />
+    <link rel='stylesheet' id='_s-style-css' href='https://24carrots.com/wp-content/themes/24carrots/style.css?ver=1.1.18' media='all' />
+    <link rel='stylesheet' id='__EPYT__style-css' href='https://24carrots.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.1.6.3' media='all' />
+    <style id='__EPYT__style-inline-css'>
+        .epyt-gallery-thumb {
+            width: 33.333%;
+        }
+    </style>
+</head>
+
+<body class="home page-template-default page page-id-4298 no-sidebar">
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+        <header id="masthead" class="site-header">
+            <div class="wrapper">
+
+                <div class="mobile-logo">
+                    <a href="/"></a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+
+                <nav id="site-navigation" class="main-navigation">
+
+                    <div class="menu-main-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            <li id="menu-item-28047" class="mobile-only menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4298 current_page_item menu-item-28047"><a href="https://24carrots.com/" aria-current="page">Home<span></span></a></li>
+                            <li id="menu-item-26592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26592"><a href="https://24carrots.com/about/">About<span></span></a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-27054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27054"><a href="https://24carrots.com/about/">About 24 Carrots<span></span></a></li>
+                                    <li id="menu-item-27055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27055"><a href="https://24carrots.com/team/">Team<span></span></a></li>
+                                    <li id="menu-item-27056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27056"><a href="https://24carrots.com/about/awards-press/">Awards &amp; Press<span></span></a></li>
+                                    <li id="menu-item-28056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28056"><a href="https://24carrots.com/blog/">Blog<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-26903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26903"><a href="https://24carrots.com/services/">Services<span></span></a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-27057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27057"><a href="https://24carrots.com/gourmet-catering/">Gourmet Catering<span></span></a></li>
+                                    <li id="menu-item-27058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27058"><a href="https://24carrots.com/services/bar-service/">Bar Service<span></span></a></li>
+                                    <li id="menu-item-27059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27059"><a href="https://24carrots.com/staffing/">Staffing<span></span></a></li>
+                                    <li id="menu-item-27060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27060"><a href="https://24carrots.com/event-production/">Production<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-26584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26584"><a href="https://24carrots.com/events/">Events<span></span></a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-26586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26586"><a href="https://24carrots.com/events/weddings/">Weddings<span></span></a></li>
+                                    <li id="menu-item-26591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26591"><a href="https://24carrots.com/events/corporate/">Corporate<span></span></a></li>
+                                    <li id="menu-item-26593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26593"><a href="https://24carrots.com/events/social/">Social<span></span></a></li>
+                                    <li id="menu-item-27061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27061"><a href="https://24carrots.com/gallery/">Gallery<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-26588" class="logo menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4298 current_page_item menu-item-26588"><a href="https://24carrots.com/" aria-current="page">Home<span></span></a></li>
+                            <li id="menu-item-26595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26595"><a href="https://24carrots.com/venues/">Venues<span></span></a></li>
+                            <li id="menu-item-26594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26594"><a href="https://24carrots.com/careers/">Careers<span></span></a></li>
+                            <li id="menu-item-26583" class="nav-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-26583"><a href="https://24carrots.com/contact/">Get In Touch<span></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <div class="carrots-mobile-logo">
+                        <a href="/"></a>
+                    </div>
+                    <div class="menu-main-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            <li class="mobile-only menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4298 current_page_item menu-item-28047"><a href="https://24carrots.com/" aria-current="page">Home<span></span></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26592"><a href="https://24carrots.com/about/">About<span></span></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27054"><a href="https://24carrots.com/about/">About 24 Carrots<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27055"><a href="https://24carrots.com/team/">Team<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27056"><a href="https://24carrots.com/about/awards-press/">Awards &amp; Press<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28056"><a href="https://24carrots.com/blog/">Blog<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26903"><a href="https://24carrots.com/services/">Services<span></span></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27057"><a href="https://24carrots.com/gourmet-catering/">Gourmet Catering<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27058"><a href="https://24carrots.com/services/bar-service/">Bar Service<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27059"><a href="https://24carrots.com/staffing/">Staffing<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27060"><a href="https://24carrots.com/event-production/">Production<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26584"><a href="https://24carrots.com/events/">Events<span></span></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26586"><a href="https://24carrots.com/events/weddings/">Weddings<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26591"><a href="https://24carrots.com/events/corporate/">Corporate<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26593"><a href="https://24carrots.com/events/social/">Social<span></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27061"><a href="https://24carrots.com/gallery/">Gallery<span></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="logo menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4298 current_page_item menu-item-26588"><a href="https://24carrots.com/" aria-current="page">Home<span></span></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26595"><a href="https://24carrots.com/venues/">Venues<span></span></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26594"><a href="https://24carrots.com/careers/">Careers<span></span></a></li>
+                            <li class="nav-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-26583"><a href="https://24carrots.com/contact/">Get In Touch<span></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-social">
+                        <div class="facebook-icon">
+                            <a href="https://www.facebook.com/24carrotscatering" target="_blank"></a>
+                        </div>
+                        <div class="instagram-icon">
+                            <a href="https://www.instagram.com/24carrotscatering/" target="_blank"></a>
+                        </div>
+                        <div class="twitter-icon">
+                            <a href="https://twitter.com/24carrotscaters" target="_blank"></a>
+                        </div>
+                        <div class="linkedin-icon">
+                            <a href="https://www.linkedin.com/company/24-carrots-catering-&-events/" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="small-menu">
+                        <a href="/gallery">GALLERY</a> | <a href="/faq">FAQ</a>
+                    </div>
+
+                    <div class="mobile-copyright">
+                        <p>© 2023 24 Carrots Catering & Events. <br>All rights reserved.</p>
+                    </div>
+
+                    <div class="mobile-legal">
+                        <div class="menu-legal-menu-container">
+                            <ul id="legal-menu" class="menu">
+                                <li id="menu-item-26900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26900"><a href="https://24carrots.com/ada-accessibility-policy/">ADA Accessibility Policy<span></span></a></li>
+                                <li id="menu-item-26901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26901"><a href="https://24carrots.com/privacy-policy/">Privacy Policy<span></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mobile-site-by">
+                        <p>Site & Design By <a href="https://dooleycreativeco.com/">Dooley Creative Co.</a></p>
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <main id="primary" class="site-main">
+
+
+            <article id="post-4298" class="post-4298 page type-page status-publish hentry">
+
+                <div class="entry-content">
+                    <section class="testimonial-video-block single-vid">
+                        <div class="tvideo">
+
+                            <div class="video-wrapper">
+                                <video id="video-one" class="video" id="video" preload="metadata" autoplay muted playsinline loop poster="https://24carrots.com/wp-content/uploads/2023/08/chef.png">
+                                    <source src="https://24carrots.com/wp-content/video/24carrtos-home-banner.mp4" type="video/mp4">
+                                    </source>
+                                </video>
+                                <h2 class="video-title">Simply the Finest</h2>
+                                <div class="down-cheveron"></div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                    <section class="content-slider-section  ">
+                        <div class="flex_container flex_two">
+
+                            <div class="flex_item centered">
+                                <div class="content-wrap">
+                                    <div class="twentyfour-content">
+                                        <h3 style="text-align: center;">Welcome to 24 carrots</h3>
+                                        <h2 style="text-align: center;">Remarkable Catering &amp; Events</h2>
+                                        <p style="text-align: center;">24 Carrots is the premier catering and events company of choice in Southern California. We create remarkable experiences by offering the finest quality foods and providing unsurpassed personalized service, driven by our passion for life’s special occasions.</p>
+                                        <p style="text-align: center;"><a class="btn" href="https://24carrots.com/contact/">GET IN TOUCH</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex_item">
+                                <div class="content-slider">
+
+                                    <div class="slider-image">
+                                        <img decoding="async" src="https://24carrots.com/wp-content/uploads/2023/10/1.1-Lorely-Meza-1.jpg" alt="" />
+                                    </div>
+                                    <div class="slider-image">
+                                        <img decoding="async" src="https://24carrots.com/wp-content/uploads/2023/10/1.2-Holly-Sigafoos-Photo.jpg" alt="" />
+                                    </div>
+                                    <div class="slider-image">
+                                        <img decoding="async" src="https://24carrots.com/wp-content/uploads/2023/10/1.3-Holly-Sigafoos-Photo.jpg" alt="" />
+                                    </div>
+                                    <div class="slider-image">
+                                        <img decoding="async" src="https://24carrots.com/wp-content/uploads/2023/10/1.4-Lorely-Meza.jpg" alt="" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <style>
+                        .slider-image {
+                            left: 0 !important;
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in-out;
+                            z-index: -1;
+                        }
+
+                        .slider-image.is-selected {
+                            opacity: 1;
+                            z-index: 0
+                        }
+                    </style>
+
+
+                   
+
+
+                    <figure class="wp-block-image"><img decoding="async" src="https://24carrots.com/d2a3ae61-b5d0-4bdd-ba20-3c13e66cbf46" alt="" /></figure>
+
+                    <div class="carrot-pin">
+                        <div class="wrapper">
+                            <section class="scroll-accordion-block" data-js="scroll-accordion">
+                                <div class="scroll-accordion" data-js="sticky-container">
+                                    <div class="flex_container flex_two">
+                                        <div class="flex_item flex_40">
+                                            <div class="scroll-accordion__window" data-js="scroll-slider">
+                                                <img decoding="async" class="js-is-active" src="https://24carrots.com/wp-content/uploads/2023/08/wedding-scroll-cropped.jpg" alt="" data-slide-num="0" />
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2023/10/2.2-Social-Lorely-Meza.jpg" alt="" data-slide-num="1" />
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2023/10/2.3-Corporate-Joel-Maus.jpg" alt="" data-slide-num="2" />
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2023/10/2.4-Venues-Jenny-Quicksall.jpg" alt="" data-slide-num="3" />
+                                            </div>
+                                        </div>
+
+                                        <div class="flex_item flex_60">
+                                            <div class="scroll-accordion__content">
+
+                                                <div class="scroll-accordion__headline">
+                                                    <div class="twentyfour-content">
+                                                        <h2 class="text-left">
+                                                            Making Every Experience Magical </h2>
+                                                    </div>
+                                                </div>
+
+                                                <div class="scroll-accordion__picker">
+                                                    <nav class="scroll-accordion__menu" data-js="slider-nav">
+                                                        <button data-target="0" class="scroll-accordion__button js-is-active">
+                                                            Weddings </button>
+                                                        <button data-target="1" class="scroll-accordion__button ">
+                                                            Social </button>
+                                                        <button data-target="2" class="scroll-accordion__button ">
+                                                            Corporate </button>
+                                                        <button data-target="3" class="scroll-accordion__button ">
+                                                            Venues </button>
+                                                    </nav>
+
+                                                    <div class="scroll-accordion__info" data-js="info-slider">
+                                                        <div data-slide-num="0" class="scroll-accordion__descr clear-default-margins js-is-active">
+                                                            <h3>Exceptional Weddings</h3>
+                                                            <p>The most important day of your life, is ours too. Your wedding should be the ultimate celebration of your relationship, and our team of experts guide you through the process, offering peace of mind and a remarkable experience.</p>
+                                                            <p><a class="btn" href="/events/weddings/">Learn More</a></p>
+                                                        </div>
+                                                        <div data-slide-num="1" class="scroll-accordion__descr clear-default-margins ">
+                                                            <h3>Incomparable Social Events</h3>
+                                                            <p>We sweat the small stuff, so you don’t have to. For all of life’s special occasions, we give your anniversary, shower, or birthday party the attention it deserves, allowing you to focus on being present with your guests!</p>
+                                                            <p><a class="btn" href="/events/social/">Learn More</a></p>
+                                                        </div>
+                                                        <div data-slide-num="2" class="scroll-accordion__descr clear-default-margins ">
+                                                            <h3>One-of-a-kind Corporate Events</h3>
+                                                            <p>Our job is to make you look good. From office lunches to large-scale corporate events, we’ve made our business out of making your business shine.</p>
+                                                            <p><a class="btn" href="/events/corporate/">Learn More</a></p>
+                                                        </div>
+                                                        <div data-slide-num="3" class="scroll-accordion__descr clear-default-margins ">
+                                                            <h3>Exclusive Social Venues</h3>
+                                                            <p>We don’t put you in a box. Each venue is unique to each party, and our curated list of event spaces and venue partners offers easy access with personalized service at Southern California’s premier locations.</p>
+                                                            <p><a class="btn" href="/venues/">Learn More</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <section class="mobile-only mobile-accordian">
+                        <div class="twentyfour-content">
+                            <h2>
+                                Making Every Experience Magical </h2>
+                        </div>
+
+                        <img decoding="async" class="oval-image" src="https://24carrots.com/wp-content/uploads/2023/08/wedding-scroll-cropped.jpg" alt="" data-slide-num="0" />
+
+
+                        <h4> Weddings</h4>
+
+                        <div data-slide-num="0" class="">
+                            <h3>Exceptional Weddings</h3>
+                            <p>The most important day of your life, is ours too. Your wedding should be the ultimate celebration of your relationship, and our team of experts guide you through the process, offering peace of mind and a remarkable experience.</p>
+                            <p><a class="btn" href="/events/weddings/">Learn More</a></p>
+                        </div>
+
+                        <img decoding="async" class="oval-image" src="https://24carrots.com/wp-content/uploads/2023/10/2.2-Social-Lorely-Meza.jpg" alt="" data-slide-num="1" />
+
+
+                        <h4> Social</h4>
+
+                        <div data-slide-num="1" class="">
+                            <h3>Incomparable Social Events</h3>
+                            <p>We sweat the small stuff, so you don’t have to. For all of life’s special occasions, we give your anniversary, shower, or birthday party the attention it deserves, allowing you to focus on being present with your guests!</p>
+                            <p><a class="btn" href="/events/social/">Learn More</a></p>
+                        </div>
+
+                        <img decoding="async" class="oval-image" src="https://24carrots.com/wp-content/uploads/2023/10/2.3-Corporate-Joel-Maus.jpg" alt="" data-slide-num="2" />
+
+
+                        <h4> Corporate</h4>
+
+                        <div data-slide-num="2" class="">
+                            <h3>One-of-a-kind Corporate Events</h3>
+                            <p>Our job is to make you look good. From office lunches to large-scale corporate events, we’ve made our business out of making your business shine.</p>
+                            <p><a class="btn" href="/events/corporate/">Learn More</a></p>
+                        </div>
+
+                        <img decoding="async" class="oval-image" src="https://24carrots.com/wp-content/uploads/2023/10/2.4-Venues-Jenny-Quicksall.jpg" alt="" data-slide-num="3" />
+
+
+                        <h4> Venues</h4>
+
+                        <div data-slide-num="3" class="">
+                            <h3>Exclusive Social Venues</h3>
+                            <p>We don’t put you in a box. Each venue is unique to each party, and our curated list of event spaces and venue partners offers easy access with personalized service at Southern California’s premier locations.</p>
+                            <p><a class="btn" href="/venues/">Learn More</a></p>
+                        </div>
+
+
+
+
+
+                    </section>
+
+                    <section class="circle-content-block">
+
+                        <div class="circle-banner" style="background-image: url(https://24carrots.com/wp-content/uploads/2023/10/unforegetable-banner.png)">
+                            <div class="half-cirlce"></div>
+                        </div>
+                        <div class="circle-content" style="max-width:620px">
+                            <div class="twentyfour-content">
+                                <h3 style="text-align: center">VENUES</h3>
+                                <h2 style="text-align: center">Unforgettable Venues</h2>
+                                <p style="text-align: center">24 Carrots is the exclusive or preferred caterer at Southern California&#8217;s most spectacular properties. From intimate understated spaces to large and luxurious, we&#8217;ll help you find the event venue that makes your heart skip a beat.</p>
+                                <p style="text-align: center"><a class="btn" href="/venues">Explore venues</a></p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="square-slider-block">
+                        <div class="square-slider" data-js="square-slider">
+                            <div class="square-slider__container">
+                                <div data-js="square-slider-track">
+                                    <div class="square-slider__slide">
+
+                                        <a href="https://24carrots.com/venue/the-richland/" class="venue-sq-preview">
+                                            <div class="venue-sq-preview__bg">
+                                                <img decoding="async" class="js-is-active" src="https://24carrots.com/wp-content/uploads/2023/03/the-richland-tanveer-badal-13.jpg" alt="The Richland Ballroom" data-slide-num="0" />
+                                            </div>
+
+                                            <div class="venue-sq-preview__overlay"></div>
+
+                                            <button class="venue-sq-preview__btn btn-outline white">
+                                                Explore Venue
+                                            </button>
+
+                                            <div class="venue-sq-preview__content">
+                                                <div class="venue-sq-preview__name">
+                                                    The Richland </div>
+
+                                                <div class="venue-sq-preview__meta">
+                                                    <div>
+                                                        Orange </div>
+                                                    <div>
+                                                        <!-- Capacity: 300 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="square-slider__slide">
+
+                                        <a href="https://24carrots.com/venue/oak-creek-golf-club/" class="venue-sq-preview">
+                                            <div class="venue-sq-preview__bg">
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2023/09/MAIN.jpg" alt="" data-slide-num="1" />
+                                            </div>
+
+                                            <div class="venue-sq-preview__overlay"></div>
+
+                                            <button class="venue-sq-preview__btn btn-outline white">
+                                                Explore Venue
+                                            </button>
+
+                                            <div class="venue-sq-preview__content">
+                                                <div class="venue-sq-preview__name">
+                                                    Oak Creek Golf Club </div>
+
+                                                <div class="venue-sq-preview__meta">
+                                                    <div>
+                                                        Irvine </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="square-slider__slide">
+
+                                        <a href="https://24carrots.com/venue/rancho-las-lomas-2/" class="venue-sq-preview">
+                                            <div class="venue-sq-preview__bg">
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2022/08/1.-MAIN-4.jpg" alt="Rancho Las Lomas" data-slide-num="2" />
+                                            </div>
+
+                                            <div class="venue-sq-preview__overlay"></div>
+
+                                            <button class="venue-sq-preview__btn btn-outline white">
+                                                Explore Venue
+                                            </button>
+
+                                            <div class="venue-sq-preview__content">
+                                                <div class="venue-sq-preview__name">
+                                                    Rancho Las Lomas </div>
+
+                                                <div class="venue-sq-preview__meta">
+                                                    <div>
+                                                        Silverado </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="square-slider__slide">
+
+                                        <a href="https://24carrots.com/venue/franciscan-gardens-2/" class="venue-sq-preview">
+                                            <div class="venue-sq-preview__bg">
+                                                <img decoding="async" class="" src="https://24carrots.com/wp-content/uploads/2023/08/7-31-5.png" alt="" data-slide-num="3" />
+                                            </div>
+
+                                            <div class="venue-sq-preview__overlay"></div>
+
+                                            <button class="venue-sq-preview__btn btn-outline white">
+                                                Explore Venue
+                                            </button>
+
+                                            <div class="venue-sq-preview__content">
+                                                <div class="venue-sq-preview__name">
+                                                    Franciscan Gardens </div>
+
+                                                <div class="venue-sq-preview__meta">
+                                                    <div>
+                                                        San Juan Capistrano </div>
+                                                    <div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+    <h3>This is Design by Md Aman i try to simply copy the color and some concept thank you..</h3>                                
+                                  
+</body>
+
+</html>
